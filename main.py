@@ -11,7 +11,7 @@ date_text = []
 contents_text = []
 result = {}
 
-RESULT_PATH = 'C:/Users/User/Desktop/python study/beautifulSoup_ws/crawling_result/'
+path = 'PATH'
 now = datetime.now()
 
 
@@ -78,7 +78,7 @@ def crawler(maxpage, query, sort, s_date, e_date):
 
     outputFileName = '%s-%s-%s  %s:%s:%s' % (
     now.year, now.month, now.day, now.hour, now.minute, now.second)
-    df.to_excel(RESULT_PATH + outputFileName, sheet_name='sheet1')
+    df.to_excel(path + outputFileName, sheet_name='sheet1')
 
 
 def main():
